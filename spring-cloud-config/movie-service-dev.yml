@@ -11,7 +11,7 @@ spring:
     init:
       data-locations: classpath:movie.sql
   jpa:
-    defer.datasource-initialization: true
+    defer-datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
 

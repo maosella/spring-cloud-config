@@ -6,8 +6,8 @@ eureka:
 management:
   info:
     env:
-      enable: true
+      enabled: true
   endpoints:
     web:
       exposure:
-        include: health, info
+        include: health,info
