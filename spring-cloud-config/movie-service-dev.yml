@@ -9,9 +9,9 @@ spring:
     password: sa
   sql:
     init:
-      data-locations: classpath:moviesql
+      data-locations: classpath:movie.sql
   jpa:
-    defer.datasource-inicialiation: true
+    defer.datasource-initialization: true
     hibernate:
       ddl-auto: create-drop
 

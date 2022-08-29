@@ -3,9 +3,30 @@ server:
 
 spring:
   application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/maosella/spring-cloud-config
+          searchPaths: spring-cloud-config
+
+  eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:8762/eureka/
+
+  management:
+    info:
+      env:
+        enable: true
+    endpoints:
+      web:
+        exposure:
+          include: health, info
+
+  info:
+    app:
       name: config-service
-    cloud:
-      config:
-        server:
-          git:
-            uri: https://github.com
+      description: Config Service Application
+      version: 0.1

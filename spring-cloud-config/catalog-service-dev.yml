@@ -4,5 +4,5 @@ server:
 info:
   app:
     name: catalog-service
-    description: Catalog Service application
-    verion: 0.1
+    description: Catalog Service Application
+    version: 0.1
